@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 4</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .del {
+            width: 32px;
+            height: 32px;
+            border: 1px solid white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            color: white;
+            font-size: 19px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="my-2 py-2 text-primary text-capitalize text-center">product crud operator</h1>
+
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <input type="text" class="form-control " placeholder="Name" id="input-name">
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control col-3" placeholder="Price" id="input-price">
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control col-3" placeholder="Count" id="input-count">
+            </div>
+            <div class=" col-2 d-grid">
+                <button class="btn btn-primary" id="btn">Add Product</button>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="list-group col-10 d-flex flex-column gap-3">
+                <div class="list-group-item d-flex justify-content-between">
+                    <span class="h6 text-primary mb-0">Name</span>
+                    <span class="h6 text-primary mb-0">Price</span>
+                    <span class="h6 text-primary mb-0">Count</span>
+                    <span>----</span>
+                </div>
+                <div id="items"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
