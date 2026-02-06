@@ -46,7 +46,7 @@ function displayProduct() {
   productsDiv.innerHTML = "";
   array.forEach((i) => {
     productsDiv.innerHTML += `
-    <div class="list-group-item d-flex justify-content-between rounded">
+    <div class="list-group-item d-flex justify-content-between align-items-center rounded">
         <span>${i.name}</span>
         <span>${i.price}$</span>
         <span>${i.count}</span>
